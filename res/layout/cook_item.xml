@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="3dp"
+    android:orientation="vertical" >
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+        <ImageView 
+            android:id="@+id/cook_pic"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="2dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/cook_one"/>
+        <LinearLayout android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="7dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView 
+                android:id="@+id/cook_title"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:paddingTop="5dp"
+                android:text="皇家鸡米饭（米随便吃）"/>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal">
+                <ImageView android:layout_width="20dp"
+                    android:layout_height="22dp"
+                    android:paddingTop="3dp"
+                    android:src="@drawable/tuijian"/>
+                <TextView 
+                    android:id="@+id/cook_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#be3131"
+                    android:paddingTop="4dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="人均￥12"/>
+            </LinearLayout>
+            <TextView 
+                android:id="@+id/cook_address"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:paddingTop="4dp"
+                android:text="地址：白楼二楼102店"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

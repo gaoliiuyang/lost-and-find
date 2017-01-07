@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0ece0"
+    android:orientation="vertical" >
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#be3131"
+        >
+        <ImageButton 
+            android:id="@+id/frag_mine_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/select_press"
+            android:src="@drawable/back"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:text="个人中心"/>
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/act_myself_selfback"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <com.gly.collagelf.myview.MyImageView
+            android:id="@+id/frag_mine_head"
+            android:clickable="true"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/frag_mine_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="昵称：隔壁老王"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/frag_mine_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:text="账户名：13017576870"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/act_mine_xueshenghui"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#fff" >
+
+            <ImageView android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/act_myself_xueshenghui"/>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:textSize="15sp"
+                android:text="学生会" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/act_mine_shetuan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#fff" >
+
+            <ImageView android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/act_myself_shetuan"/>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:textSize="15sp"
+                android:text="社团活动" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/act_mine_zhiyuan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#fff" >
+
+            <ImageView android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/act_myself_zhiyuanzhe"/>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:textSize="15sp"
+                android:text="志愿服务" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/act_mine_pingxihu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#fff" >
+
+            <ImageView android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/act_myself_pingxihu"/>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:textSize="15sp"
+                android:text="平西湖景" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/act_mine_kaoyan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#fff" >
+
+            <ImageView android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/act_myself_kaoyan"/>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:textSize="15sp"
+                android:text="考研交流" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/act_mine_cook"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/act_myself_meishi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="附近美味"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/act_mine_love"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#fff" >
+
+            <ImageView android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/act_myself_shoucang"/>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:textSize="15sp"
+                android:text="我的收藏" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/act_mine_setting"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#fff" >
+
+            <ImageView android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/act_myself_shezhi"/>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:textSize="15sp"
+                android:text="个人设置" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

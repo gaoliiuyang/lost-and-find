@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+
+   <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#be3131"
+        >
+        <ImageButton 
+            android:id="@+id/act_push_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/select_press"
+            android:src="@drawable/back"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/act_push_title"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:text="系统通知"/>
+    </RelativeLayout>
+    
+   <TextView android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/act_push_message"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       android:textSize="18sp"
+       android:text="祝你节日快乐"/>
+
+</LinearLayout>

@@ -1,0 +1,160 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0ece0"
+    android:orientation="vertical"
+ >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#be3131"
+        >
+        <ImageView 
+            android:id="@+id/act_add_back"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/select_press"
+            android:src="@drawable/back"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:text="发布信息"/>
+        <ImageView 
+            android:id="@+id/act_add_up"
+            android:clickable="true"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/select_press"
+            android:src="@drawable/up"/>
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:background="@drawable/login_et"
+        android:orientation="vertical">
+        <EditText 
+            android:id="@+id/act_add_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:padding="5dp"
+            android:textColorHint="#aa000000"
+            android:hint="输入标题"/>
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/liner"
+            android:orientation="horizontal">
+            <TextView android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/textview"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:textColor="#aa000000"
+                android:text="选择类型"/>
+            <Spinner 
+                android:id="@+id/act_add_spinner"
+                android:layout_width="0dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:background="@drawable/textview"/>
+        </LinearLayout>
+        <EditText 
+            android:id="@+id/act_add_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColorHint="#aa000000"
+            android:lineSpacingExtra="3dp"
+            android:maxLines="3"
+            android:padding="5dp"
+            android:hint="输入详情"/>
+        <EditText 
+            android:id="@+id/act_add_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColorHint="#aa000000"
+            android:padding="5dp"
+            android:hint="输入联系人"/>
+        <EditText 
+            android:id="@+id/act_add_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColorHint="#aa000000"
+            android:padding="5dp"
+            android:phoneNumber="true"
+            android:hint="输入联系电话"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/liner"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/act_linearTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/addpic_inner_liner"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/act_linearBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/addpic_inner_liner"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#fff"
+            android:orientation="horizontal">
+            <ImageButton 
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/select_press"
+                android:src="@drawable/act_add_map"/>
+            <TextView 
+                android:id="@+id/act_add_selectmap_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:textColor="#aa000000"
+                android:textSize="18sp"
+                android:text="选择地点"/>
+            <TextView 
+                android:id="@+id/act_add_finallymap_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="5dp"
+                android:textColor="#aa000000"
+                android:textSize="16sp"
+                android:text="回龙观兄弟连"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

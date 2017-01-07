@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">失物招领</string>
+    <string name="action_settings">菜单</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_welcome">失物招领</string>
+    <string name="title_activity_add_message">AddMessageActivity</string>
+    <string name="title_activity_myself_setting">MyselfSettingActivity</string>
+    <string name="title_activity_curr_item_message">CurrItemMessageActivity</string>
+    <string name="title_activity_myself_love">MyselfLoveActivity</string>
+    <string name="title_activity_search_message">SearchMessageActivity</string>
+    <string name="title_activity_station_map">StationMapActivity</string>
+    <string name="title_activity_near_cook">NearCookActivity</string>
+    <string name="title_activity_push">PushActivity</string>
+
+</resources>
